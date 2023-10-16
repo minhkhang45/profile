@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: rgb(15, 23, 42);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    padding: 24px 12px;
+    box-sizing: border-box;
+    max-width: 1000px;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 12px;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+}
+
+.navlist li {
+    margin-left: 10px;
+}
+
+.logo {
+    color: #22d3ee;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+a {
+    color: #fff;
+}
+
+.greet-content h1 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.greet {
+    padding: 24px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.greet-name {
+    color: #22d3ee;
+}
+
+.greet-content {
+    max-width: 65%;
+}
+
+.greet-content p {
+    margin-top: 24px;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+}
+
+.greet-content div img {
+    width: 48px;
+    height: 48px;
+    transition: .2s linear;
+}
+
+.greet-content div {
+    margin-top: 12px;
+}
+
+.greet-content div img:hover {
+    scale: 1.1;
+}
+
+.greet-image img {
+    height: 320px;
+    border-radius: 20px;
+}
+
+.project {
+    width: 100%;
+    background-color: rgb(30, 41, 59);
+    border-radius: 10px;
+    margin-top: 24px;
+    padding: 12px 12px;
+    transition: .1s linear;
+    display: flex;
+}
+
+.projects img {
+    width: 9rem;
+    height: 9rem;
+}
+
+.projects h1 {
+    margin-top: 30px;
+}
+
+.projects p {
+    color: rgb(156 163 175);
+    line-height: 2.25rem;
+    margin-top: 12px;
+    line-height: 20px;
+    font-size: large;
+}
+
+.project:hover {
+    scale: 1.05;
+}
+
+.project div {
+    margin-left: 30px;
+}
+
+.recent-posts img {
+    width: 300px;
+    height: 199.969px;
+    border-radius: 5px 5px 0 0;
+}
+
+.post-text {
+    width: 300px;
+    background-color: rgb(30, 41, 59);
+    padding: 16px 12px 24px;
+    border-radius: 0 0 5px 5px;
+}
+
+.recent-posts p {
+    text-align: center;
+
+}
+
+.recent-posts {
+    padding: 24px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post {
+    margin: 0 12px 0 12px
+}
+
+.burger,
+.burg-nav {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .recent-posts {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .post {
+        flex-grow: 1;
+        flex-basis: 200;
+        min-width: 300px;
+        margin: 12px;
+        min-height: min-content;
+    }
+
+    .post img {
+        min-width: 100%;
+    }
+
+    .post-text {
+        min-width: 100%;
+    }
+
+    .project:hover {
+        scale: 0.9;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .greet {
+        flex-wrap: wrap-reverse;
+    }
+
+    .greet-image {
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #e84250;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+
+    .greet-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navlist {
+        align-items: center;
+    }
+
+    .projects {
+        padding: 0px 12px;
+    }
+
+    .project {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project img {
+        height: 144px;
+        width: 144px;
+    }
+
+    .project div {
+        margin: 0;
+    }
+
+    .project h1 {
+        text-align: center;
+    }
+
+    .project p {
+        text-align: justify;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        max-width: 50px;
+        height: 50px;
+        background: #fff;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .burg-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        min-width: 100%;
+        min-height: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+        background: black;
+        text-align: center;
+        transform: translateX(100%);
+        transition: 1s;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Common */
+
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
