@@ -304,9 +304,7 @@ a {
         margin: 2px 0;
     }
 
-    .ones,
-    .twos,
-    .threes {
+    .stick {
         transition: .3s ease-in-out;
     }
 
