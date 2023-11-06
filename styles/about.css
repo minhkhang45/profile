@@ -111,11 +111,8 @@ i {
         height: 4px;
         background: black;
         border-radius: 20px;
-        margin: 2px 0;
-    }
-
-    .stick {
         transition: .3s ease-in-out;
+        margin: 2px 0;
     }
 
     .ones.click {
