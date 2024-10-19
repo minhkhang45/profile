@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="styles/about.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="styles/about.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/all.css">
-</head>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/all.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BWH2E750XC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<body>
+      gtag("config", "G-BWH2E750XC");
+    </script>
+  </head>
+
+  <body>
     <nav>
-        <a href="/">
-            <div class="logo">
-                Minhkhang
-            </div>
+      <a href="/">
+        <div class="logo">Minhkhang</div>
+      </a>
+      <ul class="navlist">
+        <a href="/index.html">
+          <li>Home</li>
         </a>
-        <ul class="navlist">
-            <a href="/index.html">
-                <li>Home</li>
-            </a>
-            <a href="https://github.com/minhkhang45" target="_blank">
-                <li>GitHub</li>
-            </a>
+        <a href="https://github.com/minhkhang45" target="_blank">
+          <li>GitHub</li>
+        </a>
+      </ul>
+      <div class="burger">
+        <div class="stick ones"></div>
+        <div class="stick twos"></div>
+        <div class="stick threes"></div>
+      </div>
+      <div class="burg-nav">
+        <ul>
+          <a href="/index.html">
+            <li>Home</li>
+          </a>
+          <a href="https://github.com/minhkhang45">
+            <li>GitHub</li>
+          </a>
         </ul>
-        <div class="burger">
-            <div class="stick ones"></div>
-            <div class="stick twos"></div>
-            <div class="stick threes"></div>
-        </div>
-        <div class="burg-nav">
-            <ul>
-                <a href="/index.html">
-                    <li>Home</li>
-                </a>
-                <a href="https://github.com/minhkhang45">
-                    <li>GitHub</li>
-                </a>
-            </ul>
-        </div>
+      </div>
     </nav>
     <main>
-        <h1>My skills</h1>
-        <div class="skills-content">
-            <div class="skills">
-                <i class="fa-brands fa-css3"></i>
-            </div>
-            <div class="skills">
-                <i class="fa-brands fa-html5"></i>
-            </div>
-            <div class="skills">
-                <i class="fa-brands fa-square-js"></i>
-            </div>
-            <div class="skills">
-                <i class="fa-brands fa-git-alt"></i>
-            </div>
+      <h1>My skills</h1>
+      <div class="skills-content">
+        <div class="skills">
+          <i class="fa-brands fa-css3"></i>
         </div>
+        <div class="skills">
+          <i class="fa-brands fa-html5"></i>
+        </div>
+        <div class="skills">
+          <i class="fa-brands fa-square-js"></i>
+        </div>
+        <div class="skills">
+          <i class="fa-brands fa-git-alt"></i>
+        </div>
+      </div>
     </main>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
